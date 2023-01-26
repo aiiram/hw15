@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  justify-items: stretch;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 2px solid black;
+  padding: 20px;
+  justify-content: center;
+}
+
+.square {
+  fill: rgb(84, 12, 199);
+  stroke-width: 5;
+  stroke: rgb(252, 167, 8);
+}
+
+.rect {
+  fill: rgb(179, 111, 111);
+  stroke-width: 5;
+  stroke: rgb(230, 20, 20)
+}
+
+.ellipse {
+  fill: rgb(118, 117, 118);
+  stroke: rgb(153, 44, 119);
+  stroke-width: 5;
+}
+
+.star {
+  fill: rgb(203, 108, 173);
+  stroke: rgb(232, 14, 148);
+  stroke-width: 5;
+  fill-rule: evenodd;
+  transition: 2s;
+}
+
+.star:hover {
+  fill: rgb(240, 10, 117);
+  stroke: rgb(20, 20, 219);
+}
